@@ -1,0 +1,31 @@
+Git Commands
+============
+
+*Git global setup*
+git config --global user.name "Yogesh Here"
+git config --global user.email "yhere@charterglobal.com"
+
+*Create a new repository*
+git clone https://gitlab.com/cgitest123/Sample_test.git
+cd Sample_test
+touch README.md
+git add README.md
+git commit -m "add README"
+git push -u origin master
+
+*cd existing_folder*
+git init
+git remote add origin https://gitlab.com/cgitest123/Sample_test.git
+git add .
+git commit -m "Initial commit"
+git push -u origin master
+
+*Existing Git repository*
+cd existing_repo
+git remote rename origin old-origin
+git remote add origin https://gitlab.com/cgitest123/Sample_test.git
+git push -u origin --all
+git push -u origin --tags
+
+
+
